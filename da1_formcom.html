@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vehicle Insurance</title>
+    <link rel="stylesheet" href="mp.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body id="main">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 style="text-align: center">Commercial Vehicle Insurance form</h1>
+        <br>
+        <h4>Please fill the form accurately for better assisstance</h4>
+      </div>
+
+  <hr>
+  <form class="" action="index.html" method="post" style="color: white">
+    <h4 id="h4">The ones with <strong style="color: red">*</strong> are mandatory!</h4>
+        <h5 style="color: red" id="h5"><strong style="color: white">Personal Details</strong></h5>
+        <h5 style="color: red" id="h5"><strong style="color: white">Name:</strong>*</h5>
+        <input type="radio" name="prefix" id="mr" value="">
+        <label for="mr" id="h5">Mr.</label>
+        <input type="radio" name="prefix" id="mrs" value="">
+        <label for="mrs" id="h5">Mrs.</label>
+        <input type="radio" name="prefix" id="ms" value="">
+        <label for="ms" id="h5">Ms.</label>
+        <p></p>
+        <input type="text" name="Fname" placeholder="First Name">
+        <input type="text" name="Lname" placeholder="Last Name">
+        <p></p>
+        <h5 style="color: red" id="h5"><strong style="color: white">Date of Birth:</strong>*</h5>
+        <input type="date" name="date" placeholder="Date of Birth">
+
+        <br>
+
+        <h5 style="color: red" id="h5"><strong style="color: white">Phone Number:</strong>*</h5>
+        <input type="text" name="acode" placeholder="Area Code"><label for="">-</label>
+        <input type="text" name="pno" placeholder="Phone Number">
+
+        <br>
+
+        <h5 style="color: red" id="h5"><strong style="color: white">Address:</strong>*</h5>
+        <input type="text" name="line1" placeholder="Street Address Line 1"><p></p>
+        <input type="text" name="line2" placeholder="Street Address Line 2">
+        <p></p>
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="SorP" placeholder="State/Province">
+        <p></p>
+        <input type="text" name="zcode" placeholder="Postal/Zip Code">
+        <input type="text" name="country" placeholder="Country">
+
+        <br>
+
+        <h5 style="color: red" id="h5"><strong style="color: white">E-mail:</strong></h5>
+        <input type="text" name="email" placeholder="ex:myname@example.com">
+
+        <br>
+
+        <h5 style="color: red" id="h5"><strong style="color: white">Type of Company?</strong>*</h5>
+        <select name="company" required>
+          <option>No Selection</option>
+          <option>Government</option>
+          <option>Private</option>
+        </select>
+
+        <p id="h5">Please give the GST no.</p>
+        <input type="text" name="gst" placeholder="GSTIN Number" maxlength="25" required>
+        <br>
+        <h5 style="color: red" id="h5"><strong style="color: white">Number of Vehicles:</strong>*</h5>
+        <select name="types">
+          <option>No selection</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>Other</option>
+        </select>
+        <p></p>
+        <strong><i>If the above option selected is "Other"</i></strong> <p></p>
+        Then Please type the number of Vehicles:
+        <textarea name="name" rows="1" cols="3"></textarea>
+        <br>
+        <h5 style="color: red" id="h5"><strong style="color: white">Vehicle Cargo Limit(in tons!)</strong>*</h5>
+        <select name="cargo">
+          <option value="">0-30</option>
+          <option value="">31-60</option>
+          <option value="">60+</option>
+        </select>
+
+        <br>
+
+        <h5 style="color: red" id="h5"><strong style="color: white">Are You Currently Insured?</strong>*</h5>
+
+        <input type="radio" id="yes" name="opt">
+        <label for="yes" id="h5">Yes</label>
+        <p></p>
+        <input type="radio" name="opt" id="no">
+        <label for="no" id="5">No</label>
+
+        <h5 id="h5"><strong>Any other details to assist us make informed decision?</strong> </h5>
+        <textarea name="name" rows="5" cols="60"></textarea>
+        <br>
+        <input type="submit" name="" value="SUBMIT">
+        <input type="reset" name="" value="RESET">
+
+        <h4 id="h4">The ones with <strong style="color: red">*</strong> are mandatory!</h4>
+  </form>
+
+      <p></p>
+    </div>
+
+  </body>
+</html>
